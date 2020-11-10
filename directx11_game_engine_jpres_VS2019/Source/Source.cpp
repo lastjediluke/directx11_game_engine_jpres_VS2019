@@ -1,4 +1,4 @@
-#include "../Header Files/ErrorLogger.h"
+#include "../Header Files/RenderWindow.h"
 #include <windows.h>
 #include <tchar.h>
 
@@ -16,11 +16,19 @@ int CALLBACK WinMain(
 	HRESULT hr = S_OK;
 	if (SUCCEEDED(hr))
 	{
+		// 
 		//MessageBoxA()
 	}
 	if (FAILED(hr))
 	{
 		ErrorLogger::Log(hr, "Failure");
+	}
+
+	RenderWindow rw;
+	rw.Initialize(hInstance, "Title", "MyWindowClass", 800, 600);
+	while (rw.ProcessMessages() == true)
+	{
+		// Sleep(50);
 	}
 	
 	return 0;
