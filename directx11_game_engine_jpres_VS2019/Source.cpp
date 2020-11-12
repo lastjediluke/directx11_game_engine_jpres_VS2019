@@ -1,4 +1,4 @@
-#include "../Header Files/Engine.h"
+#include "Engine.h"
 #include <windows.h>
 #include <tchar.h>
 
@@ -29,6 +29,8 @@ int CALLBACK WinMain(
 	while (engine.ProcessMessages() == true)
 	{
 		// Sleep(50);
+		engine.Update();
+
 	}
 	
 	return 0;

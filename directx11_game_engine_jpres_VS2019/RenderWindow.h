@@ -1,5 +1,5 @@
 #pragma once
-#include "../Header Files/ErrorLogger.h"
+#include "ErrorLogger.h"
 
 // can't include WindowContainer, it would be circular dep
 // forward declare instead

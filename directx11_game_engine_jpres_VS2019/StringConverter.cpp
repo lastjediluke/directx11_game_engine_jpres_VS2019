@@ -1,4 +1,4 @@
-#include "../Header Files/StringConverter.h"
+#include "StringConverter.h"
 
 std::wstring StringConverter::StringToWide(std::string str)
 {

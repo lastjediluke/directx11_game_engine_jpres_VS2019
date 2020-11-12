@@ -1,6 +1,6 @@
 #pragma once
 #include "RenderWindow.h"
-
+#include "Keyboard/KeyboardClass.h"
 
 class WindowContainer
 {
@@ -10,4 +10,5 @@ public:
 	Keyboard class: tutorial 5*/
 protected:
 	RenderWindow render_window;
+	KeyboardClass keyboard;
 };
