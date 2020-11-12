@@ -19,15 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Engine.cpp" />
     <ClCompile Include="Source\ErrorLogger.cpp" />
     <ClCompile Include="Source\RenderWindow.cpp" />
     <ClCompile Include="Source\Source.cpp" />
     <ClCompile Include="Source\StringConverter.cpp" />
+    <ClCompile Include="Source\WindowContainer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header Files\Engine.h" />
     <ClInclude Include="Header Files\ErrorLogger.h" />
     <ClInclude Include="Header Files\RenderWindow.h" />
     <ClInclude Include="Header Files\StringConverter.h" />
+    <ClInclude Include="Header Files\WindowContainer.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

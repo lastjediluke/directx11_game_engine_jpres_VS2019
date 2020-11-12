@@ -1,10 +1,14 @@
 #pragma once
 #include "../Header Files/ErrorLogger.h"
 
+// can't include WindowContainer, it would be circular dep
+// forward declare instead
+class WindowContainer;
+
 class RenderWindow
 {
 public:
-	bool Initialize(HINSTANCE hInstance, std::string window_title, std::string window_class, int width, int height);
+	bool Initialize(WindowContainer * pWindowContainer, HINSTANCE hInstance, std::string window_title, std::string window_class, int width, int height);
 	bool ProcessMessages();
 	~RenderWindow();
 private:

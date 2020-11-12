@@ -1,4 +1,4 @@
-#include "../Header Files/RenderWindow.h"
+#include "../Header Files/Engine.h"
 #include <windows.h>
 #include <tchar.h>
 
@@ -24,9 +24,9 @@ int CALLBACK WinMain(
 		ErrorLogger::Log(hr, "Failure");
 	}
 
-	RenderWindow rw;
-	rw.Initialize(hInstance, "Title", "MyWindowClass", 800, 600);
-	while (rw.ProcessMessages() == true)
+	Engine engine;
+	engine.Initialize(hInstance, "Title", "MyWindowClass", 800, 600);
+	while (engine.ProcessMessages() == true)
 	{
 		// Sleep(50);
 	}
